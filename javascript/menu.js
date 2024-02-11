@@ -1,7 +1,7 @@
 // Archivo JavaScript para el menú
 
 const hamburger = document.querySelector('.hamburger'),
-	menu = document.querySelector('.menu-navegacion');
+	menu = document.querySelector('.menu-navigation');
 
 hamburger.addEventListener('click',() => {
 	menu.classList.toggle('spread');

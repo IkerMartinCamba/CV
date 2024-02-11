@@ -10,7 +10,7 @@
 /* COLORS */
 :root {
   --menu: #3F3F3F;
-  --orange: #F57C21;
+  --orange: #ED6C0A;
   --greyDark: #444343;
   --greyLight: #7F7B7B;
   --greyVeryLight: #c8c8c8;
@@ -18,11 +18,16 @@
   --whiteLight: #FCFCFC;
   --menu1: #F9704E;
   --menu2: #F0720D;
+  --green: #07a636;
+  --blue: #0c73bd;
+  --purple: #a943f2;
+  --red: #e82424;
+  --orange-white: #f58b39;
 }
 
 /*------------------------------------------*/
 
-.titulo-section{
+.title-section{
   text-align: center;
   font-size: 20px;
   margin-bottom: 40px;
@@ -35,7 +40,7 @@
 header{
   height: 100vh;
   background-image: linear-gradient(to top, rgba(77, 72, 92, 0.6) 0%, 
-    rgba(77, 72, 92, 0.6) 50%), url(../resources/img/banner.jpg);
+    rgba(77, 72, 92, 0.6) 50%), url(../resources/images/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -54,7 +59,7 @@ header{
   border-radius: 20%;
 }
 
-.menu-navegacion{
+.menu-navigation{
   position: fixed;
   top: 0;
   right: 0;
@@ -71,14 +76,14 @@ header{
   z-index: 4;
 }
 
-.menu-navegacion a{
+.menu-navigation a{
   color: white;
   text-decoration: none;
   font-size: 20px;
   font-weight: 300;
 }
 
-.contenedor{
+.container{
   width: 90%;
   max-width: 1200px;
   overflow: hidden;
@@ -97,7 +102,7 @@ header{
   text-align: center;
 }
 
-.titulo{
+.title{
   font-size: 60px;
   margin-bottom: 15px;
 }
@@ -114,7 +119,7 @@ header{
 /*------------------------------------------*/
 
 /* SOBRE MI */
-#sobre-mi{
+#about-me{
   padding: 50px 50px;
   display: flex;
   justify-content: center;
@@ -122,29 +127,30 @@ header{
   background: var(--whiteLight);
 }
 
-#sobre-mi img{
+#about-me img{
   border-radius: 10%;
   width: 30%;
 }
 
-#sobre-mi div{
+#about-me div{
   padding: 30px 30px;
 }
 
-#sobre-mi div h4{
+#about-me div h4{
   color: black;
   font-size: 20px;
   margin: 15px 0px;
 }
 
-#sobre-mi div p{
+#about-me div p{
   color: black;
   font-size: 18px;
 }
 
-.descargar-cv {
+.orange-button {
   display: inline-block;
   text-decoration: none;
+  font-weight: bold;
   color: var(--orange);
   padding: 10px 30px;
   border: 3px solid var(--orange);
@@ -153,7 +159,7 @@ header{
   transition: all 0.4s;
 }
 
-.descargar-cv:hover{
+.orange-button:hover{
   background: var(--orange);
   color: white;
 }
@@ -161,7 +167,7 @@ header{
 /*------------------------------------------*/
 
 /* EXPERIENCIA */
-#experiencia{
+#experience{
   background-color: var(--whiteLight);
   min-height: 50vh;
   padding: 100px 15px;
@@ -170,7 +176,7 @@ header{
 /*------------------------------------------*/
 
 /* FORMACIÓN */
-#formacion{
+#education{
   background-color: var(--whiteDark);
   min-height: 50vh;
   padding: 100px 15px;
@@ -253,7 +259,7 @@ header{
 /*------------------------------------------*/
 
 /* COMPETENCIAS */
-#competencias{
+#competencies{
   display: grid;
   place-items: center;
   min-height: 50vh;
@@ -261,17 +267,17 @@ header{
   background-color: var(--whiteDark);
 }
 
-#contenido-competencias{
+#content-competencies{
   width: 50%;
 }
 
-#contenido-competencias h3{
+#content-competencies h3{
   margin: 12px 0;
   color: black;
   font-weight: 300;
 }
 
-.barra-progreso{
+.progress-bar{
   position: relative;
   height: 20px;
   width: 100%;
@@ -304,7 +310,7 @@ span:after{
   justify-content: center;
 }
 
-.circulo-envoltura{
+.circle-envoltura{
   margin-top: 10px;
   margin-left: 50px;
   margin-bottom: 50px;
@@ -314,17 +320,17 @@ span:after{
   border-radius: 50%;
 }
 
-.circulo-envoltura .circulo .mask,
-.circulo-envoltura .circulo .fill-1,
-.circulo-envoltura .circulo .fill-2,
-.circulo-envoltura .circulo .fill-3{
+.circle-envoltura .circle .mask,
+.circle-envoltura .circle .fill-1,
+.circle-envoltura .circle .fill-2,
+.circle-envoltura .circle .fill-3{
   width: 150px;
   height: 150px;
   position: absolute;
   border-radius: 50%;
 }
 
-.circulo-envoltura .circulo .mask{
+.circle-envoltura .circle .mask{
   clip: rect(0px, 150px, 150px, 75px);
 }
 
@@ -336,7 +342,7 @@ span:after{
 }
 
 .mask.full-1,
-.circulo .fill-1{
+.circle .fill-1{
   animation: fill-1 ease-in-out 3s;
   transform: rotate(135deg);
 }
@@ -354,7 +360,7 @@ span:after{
 }
 
 .mask.full-2,
-.circulo .fill-2{
+.circle .fill-2{
   animation: fill-2 ease-in-out 3s;
   transform: rotate(90deg);
 }
@@ -372,7 +378,7 @@ span:after{
 }
 
 .mask.full-3,
-.circulo .fill-3{
+.circle .fill-3{
   animation: fill-3 ease-in-out 3s;
   transform: rotate(45deg);
 }
@@ -401,7 +407,7 @@ span:after{
 /*------------------------------------------*/
 
 /* PROYECTOS */
-#proyectos{
+#projects{
   padding: 50px 50px;
   display: flex;
   justify-content: center;
@@ -409,27 +415,51 @@ span:after{
   background: var(--whiteLight);
 }
 
-#proyectos div{
+#projects div{
   padding: 30px 30px;
-  background-color: black;
   border-radius: 15px;
+  margin: 20px;
+  width: 250px;
 }
 
-#proyectos div h4{
+#projects .github{
+  background-image: linear-gradient(to bottom right, rgb(168, 168, 168), black);
+}
+
+#projects .mongodb{
+  background-image: linear-gradient(to bottom right, rgb(170, 235, 160), var(--green));
+}
+
+#projects .mysql{
+  background-image: linear-gradient(to bottom right, rgb(156, 180, 216), var(--blue));
+}
+
+#projects .kotlin{
+  background-image: linear-gradient(to bottom right, rgb(59, 124, 222), var(--orange-white));
+}
+
+#projects .java{
+  background-image: linear-gradient(to bottom right, rgb(236, 123, 144), var(--red));
+}
+
+#projects div h4{
   color: white;
   font-size: 20px;
   margin: 15px 0px;
 }
 
-#proyectos img{
+#projects img{
   border-radius: 10%;
-  width: 20%;
+  max-width: 150px;
+  min-width: 50px;
   background-color: white;
+  padding: 5px;
 }
 
-.abrir-github {
+.black-button {
   display: inline-block;
   text-decoration: none;
+  font-weight: bold;
   color: white;
   padding: 10px 30px;
   border: 3px solid white;
@@ -438,7 +468,7 @@ span:after{
   transition: all 0.4s;
 }
 
-.abrir-github:hover{
+.black-button:hover{
   background: white;
   color: black;
 }
@@ -446,29 +476,30 @@ span:after{
 /*------------------------------------------*/
 
 /* CONTACTO */
-#contacto{
+#contact{
   padding: 0px 50px;
   background: var(--whiteDark);
 }
 
-#contenido-contacto{
+#content-contact{
   padding: 50px 50px 0px 50px;
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
 
-#contenido-contacto div{
+#content-contact div{
   flex: 1;
   margin: 20px 0px;
 }
 
-#contenido-contacto div p{
+#content-contact div p{
+  margin-top: 15px;
   color: black;
   font-size: 18px;
 }
 
-#contenido-contacto div img{
+#content-contact div img{
   width: 15%;
 }
 
@@ -488,7 +519,7 @@ footer{
 /* RESPONSIVE */
 @media(max-width: 940px){
   /* BANNER */
-  #sobre-mi img{
+  #about-me img{
     width: 40%;
   }
 
@@ -513,7 +544,7 @@ footer{
 
 
   /* CONTACTO */
-  #contenido-contacto{
+  #content-contact{
     flex-direction: column;
   }
 }
@@ -521,7 +552,7 @@ footer{
 
 @media(max-width: 670px){
   /* BANNER */
-  #sobre-mi img{
+  #about-me img{
     width: 50%;
   }
 
@@ -532,7 +563,7 @@ footer{
   }
 
   /* HEADER */
-  .menu-navegacion a{
+  .menu-navigation a{
     font-size: 15px;
     font-weight: 300;
   }
