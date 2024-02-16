@@ -19,7 +19,7 @@
   --menu1: #F9704E;
   --menu2: #F0720D;
   --green: #07a636;
-  --blue: #0c73bd;
+  --blue: #18b2d1;
   --purple: #a943f2;
   --red: #e82424;
   --orange-white: #f58b39;
@@ -438,8 +438,8 @@ span:after{
   background-image: linear-gradient(to bottom right, rgb(170, 235, 160), var(--green));
 }
 
-#projects .mysql{
-  background-image: linear-gradient(to bottom right, rgb(156, 180, 216), var(--blue));
+#projects .sql{
+  background-image: linear-gradient(to bottom right, rgb(172, 190, 216), var(--blue));
 }
 
 #projects .kotlin{
@@ -462,6 +462,10 @@ span:after{
   min-width: 50px;
   background-color: white;
   padding: 5px;
+}
+
+#projects .sql img{
+  max-width: 110px;
 }
 
 .black-button {
