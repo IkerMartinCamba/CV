@@ -602,3 +602,10 @@ footer{
     }
   }
 }
+
+@media(max-width: 400px){
+  /* CONTACTO */
+  #content-contact div p {
+    font-size: 17px;
+  }
+}
