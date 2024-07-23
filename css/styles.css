@@ -603,6 +603,14 @@ footer{
   }
 }
 
+@media(max-width: 430px){
+  /* HEADER */  
+  .menu-navigation a{
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
 @media(max-width: 400px){
   /* CONTACTO */
   #content-contact div p {
