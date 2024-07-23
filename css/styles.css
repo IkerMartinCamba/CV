@@ -418,7 +418,7 @@ span:after{
   background: var(--whiteLight);
 }
 
-@media (max-width: 519px) {
+@media (max-width: 750px) {
   #projects {
     flex-direction: column;
     align-items: center;
@@ -574,15 +574,31 @@ footer{
     width: 50%;
   }
 
+  #about-me div{
+    padding: 30px 0px;
+  }
+
   /* IDIOMAS */
   .all{
     display: grid;
     place-items: center;
   }
 
-  /* HEADER */
+  /* CONTACTO */
+  #content-contact div p {
+    font-size: 20px;
+  }
+
+  /* HEADER */  
   .menu-navigation a{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
+  }
+
+  /* FOOTER */
+  footer{
+    p {
+      font-size: 15px;
+    }
   }
 }
